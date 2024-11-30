@@ -11,7 +11,7 @@
 		<table>
 			<tr>
 				<td align="right">Registration Number:</td>
-				<td><input type="text" name="regno" /></td>
+				<td><input type="text" name="id" /></td>
 			</tr>
 			<tr>
 				<td align="right">Name:</td>
@@ -21,16 +21,19 @@
 				<td align="right">Age:</td>
 				<td><input type="number" name="age" /></td>
 			</tr>
+            <tr>
+                <td align="right">Gender:</td>
+                <td><input type="text" name="gender"/></td>
+            </tr>
 			<tr>
 				<td align="right">Course:</td>
-				<td>
-					<select name="course">
-						<option value="IT">IT</option>
-						<option value="ICT">ICT</option>
-						<option value="CSC">CSC</option>
-					</select>
+				<td><input type="text" name="course"/>
 				</td>
 			</tr>
+            <tr>
+                <td align="right">ENrollment_Date :</td>
+                <td><input type="Date"/></td>
+            </tr>
 			<tr>
 				<td></td>
 				<td><input type="submit" value="Add a new student" /></td>
