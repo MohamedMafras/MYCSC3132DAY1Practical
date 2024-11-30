@@ -22,12 +22,25 @@
 				<td><input type="number" name="age" /></td>
 			</tr>
             <tr>
-                <td align="right">Gender:</td>
-                <td><input type="text" name="gender"/></td>
-            </tr>
+				<td align="right">Course:</td>
+				<td align="right">
+					<select name="gender">
+						<option value="Male">Male</option>
+						<option value="Female">Female</option>
+						
+					</select>
+				</td>
+			</tr>
 			<tr>
 				<td align="right">Course:</td>
-				<td><input type="text" name="course"/>
+				<td>
+					<select name="course">
+						<option value="Computer Science">Computer Science</option>
+						<option value="Information Technology">Information Technology</option>
+						<option value="Cyber Security  ">Cyber Security</option>
+                        <option value=" Data Science ">Data Science </option>
+                        <option value="Software Engineering">Software Engineering</option>
+					</select>
 				</td>
 			</tr>
             <tr>
