@@ -5,7 +5,7 @@ require_once 'dpconf.php';
 try {
 
 	//Query
-	$sql = "SELECT * FROM STUDENTS";
+	$sql = "SELECT * FROM STUDENT";
 
 	//excute the quey
 	$result = mysqli_query($connect,$sql);
