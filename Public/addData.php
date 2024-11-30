@@ -31,8 +31,8 @@
 				</td>
 			</tr>
             <tr>
-                <td align="right">ENrollment_Date :</td>
-                <td><input type="Date"/></td>
+                <td align="right">Enrollment_Date :</td>
+                <td><input type="Date" name="enrollment_Date"/></td>
             </tr>
 			<tr>
 				<td></td>
@@ -42,10 +42,10 @@
 	</form>
 	<?php
 	require_once 'dbconf.php';
-	function AddData($connect,$reg,$name,$age,$course){
+	function AddData($connect,$id,$name,$age,$gender,$course,$enrollment_Date){
 		try {
 		//Query
-			$sql = "INSERT INTO STUDENTS VALUES('$reg','$name',$age,'$course')";
+			$sql = "INSERT INTO STUDENTS VALUES('$id','$name','$age','$gender','$course','$enrollment_Date')";
 			//echo "$sql";
 		//excute the quey
 			$result = mysqli_query($connect,$sql);
@@ -62,11 +62,12 @@
 	
 	if ($_SERVER['REQUEST_METHOD'] == "POST") {
 		//echo "Got the POST request from client";
-		$reg = $_POST['regno'];
+		$id = $_POST['idno'];
 		$name = $_POST['name'];
 		$age = $_POST['age'];
 		$course = $_POST['course'];
-		AddData($connect,$reg,$name,$age,$course);
+        $enrollment_Date = $_POST['enrollment_Date'];
+		AddData($connect,$id,$name,$age,$course,$enrollment_Date);
 	}
 	//display the table
 	//echo "Hello";
